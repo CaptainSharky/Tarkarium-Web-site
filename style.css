@@ -8,8 +8,8 @@ header {
 
 .title{
     display: flex;
+    color: white;
     font-size: 4em;
-    margin-left: 20px;
     align-items: center;
 }
 
@@ -17,7 +17,7 @@ header {
     display: flex;
     list-style-type: none;
     font-size: 1em;
-    margin: 5%;
+    margin: 1%;
     align-items: center;
 }
 
@@ -27,10 +27,6 @@ header {
     text-decoration: none;
     font-size: 4em;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.menu li:last-child{
-    margin-right: 0;
 }
 
 .titleText{
@@ -127,8 +123,53 @@ main{
     flex-direction: column;
     min-height: 100%;
 }
+.btn-custom{
+    margin-left: -15px;
+}
 
-button{
-    background-color: transparent;
+@media (max-width: 770px) {
+    .menu {
+        flex-direction: column; /* Меню в колонку */
+        margin-top: 10px;
+        align-items: center; /* Центрирование элементов меню */
+        width: 100%; /* Задаем ширину 100%, чтобы flex-items могли центрироваться */
+    }
 
+    .menu li {
+        margin-right: 0; /* Убираем отступы справа */
+        font-size: 2em; /* Уменьшаем размер шрифта для мобильных устройств */
+        margin-bottom: 20px; /* Добавляем нижний отступ для элементов меню */
+    }
+
+    header {
+        height: auto; /* Автоматическая высота шапки */
+        flex-direction: column; /* Элементы шапки в колонку */
+        align-items: center; /* Центрирование элементов шапки */
+        justify-content: center; /* Дополнительное выравнивание содержимого по центру, если потребуется */
+        width: 100%; /* Задаем ширину 100% */
+    }
+
+    .title {
+        font-size: 2em; /* Уменьшаем размер шрифта заголовка для мобильных устройств */
+        margin-left: 0; /* Убираем отступ слева */
+        margin-top: 10px; /* Добавляем верхний отступ для заголовка */
+    }
+    
+    .FishPage {
+        flex-direction: column; /* Переключаем на вертикальное расположение */
+        align-items: center; /* Выравнивание элементов по центру */
+    }
+
+    .ImgOnPage, .description {
+        width: 100%; /* Элементы занимают всю доступную ширину */
+        height: auto; /* Высота изображения становится автоматической */
+    }
+
+    .ImgOnPage {
+        margin-bottom: 20px; /* Добавляем отступ снизу для изображения */
+    }
+
+    .textBoxMain{
+        width: 90%;
+    }
 }
