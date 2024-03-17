@@ -5,24 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Наши рибки</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 </head>
 <body>
+    <header> 
+        <div>
+            <ul class="menu">
+                <li><a href="Index.html" class="titleText">Главная</a></li>
+                <li><a href="catalog.html" class="titleText">Рибки</a></li>
+                <li> 
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal">
+                      <span class="title">Аккаунт</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="title">
+                <a href="Index.html" class="titleText">Главная</a>
+        </div>
+        <div class="title">
+                <a href="catalog.html" class="titleText">Рибки</a>
+        </div> -->
+        <!-- Модальное окно -->
+<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registrationModalLabel">Форма регистрации</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="username" class="form-label">Имя пользователя</label>
+              <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Электронная почта</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Пароль</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    </header>
     <div class="wrapper">
-        <header> 
-            <div class="title">
-                    <a href="Index.html" class="titleText">Главная</a>
-            </div>
-            <div class="title">
-                    <a href="catalog.html" class="titleText">Рибки</a>
-            </div>
-        </header>
+        
         
         <main>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
-                        <a href="konch.html" class="card mb-4 shadow-sm custom-card">
+                        <a href="konch.html" class="card mb-4 shadow-sm">
                             <img src="kaplya.jpg" class="card-img-top">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Рыба капля</h5>
@@ -30,7 +76,7 @@
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <a href="piranya.html" class="card mb-4 shadow-sm custom-card">
+                        <a href="piranya.html" class="card mb-4 shadow-sm">
                             <img src="piranya.jpg" class="card-img-top">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Пиранья</h5>
@@ -38,9 +84,9 @@
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <a href="old_wife.html" class="card mb-4 shadow-sm custom-card">
+                        <a href="old_wife.html" class="card mb-4 shadow-sm">
                             <img src="old wife.jpg" class="card-img-top">
-                            <div class="card-body">
+                            <div class="card-body text-center">
                                 <h5 class="card-title">Старая жена</h5>
                             </div>
                         </a>
@@ -52,7 +98,8 @@
         <footer> 
             <p>Таркариум 2024&copy; "Все права защищены"</p>
         </footer>
-        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
     </div>
 </body>
 </html>
