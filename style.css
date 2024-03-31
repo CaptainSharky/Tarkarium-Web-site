@@ -129,44 +129,44 @@ main{
 
 @media (max-width: 770px) {
     .menu {
-        flex-direction: column; /* Меню в колонку */
+        flex-direction: column; 
         margin-top: 10px;
-        align-items: center; /* Центрирование элементов меню */
-        width: 100%; /* Задаем ширину 100%, чтобы flex-items могли центрироваться */
+        align-items: center; 
+        width: 100%; 
     }
 
     .menu li {
-        margin-right: 0; /* Убираем отступы справа */
-        font-size: 2em; /* Уменьшаем размер шрифта для мобильных устройств */
-        margin-bottom: 20px; /* Добавляем нижний отступ для элементов меню */
+        margin-right: 0; 
+        font-size: 2em; 
+        margin-bottom: 20px; 
     }
 
     header {
-        height: auto; /* Автоматическая высота шапки */
-        flex-direction: column; /* Элементы шапки в колонку */
-        align-items: center; /* Центрирование элементов шапки */
-        justify-content: center; /* Дополнительное выравнивание содержимого по центру, если потребуется */
-        width: 100%; /* Задаем ширину 100% */
+        height: auto; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        width: 100%; 
     }
 
     .title {
-        font-size: 2em; /* Уменьшаем размер шрифта заголовка для мобильных устройств */
-        margin-left: 0; /* Убираем отступ слева */
-        margin-top: 10px; /* Добавляем верхний отступ для заголовка */
+        font-size: 2em; 
+        margin-left: 0; 
+        margin-top: 10px; 
     }
     
     .FishPage {
-        flex-direction: column; /* Переключаем на вертикальное расположение */
-        align-items: center; /* Выравнивание элементов по центру */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .ImgOnPage, .description {
-        width: 100%; /* Элементы занимают всю доступную ширину */
-        height: auto; /* Высота изображения становится автоматической */
+        width: 100%; 
+        height: auto; 
     }
 
     .ImgOnPage {
-        margin-bottom: 20px; /* Добавляем отступ снизу для изображения */
+        margin-bottom: 20px; 
     }
 
     .textBoxMain{
